@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "97.0.4692.71" ],
+  "name" : "Browser.Version"
+}, {
+  "values" : [ "https://fundraiser-test.awaed.co/ar/login" ],
+  "name" : "URL"
+}, {
+  "values" : [ "Chrome" ],
+  "name" : "Browser"
+} ]

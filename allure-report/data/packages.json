@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "org.awaed.LoginTest",
+    "children" : [ {
+      "name" : "Login",
+      "uid" : "5c242fb0ed0a930c",
+      "parentUid" : "05cb3db08b2481cab481f8f2bc6150df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648136810325,
+        "stop" : 1648136816653,
+        "duration" : 6328
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "org.awaed.LoginTest"
+  } ]
+}

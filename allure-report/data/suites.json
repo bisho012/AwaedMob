@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Default Suite",
+    "children" : [ {
+      "name" : "AwaedMob",
+      "children" : [ {
+        "name" : "org.awaed.LoginTest",
+        "children" : [ {
+          "name" : "Login",
+          "uid" : "5c242fb0ed0a930c",
+          "parentUid" : "4b907a4f404640d15722065e4fcf2c2b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1648136810325,
+            "stop" : 1648136816653,
+            "duration" : 6328
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4b907a4f404640d15722065e4fcf2c2b"
+      } ],
+      "uid" : "5ff6179105db3d50d224e5d1ae558452"
+    } ],
+    "uid" : "8399274b4bb69ec8699907dd6ef7de4e"
+  } ]
+}

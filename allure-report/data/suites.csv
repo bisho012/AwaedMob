@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Mar 24 17:46:50 EET 2022","Thu Mar 24 17:46:56 EET 2022","6328","Default Suite","AwaedMob","org.awaed.LoginTest","org.awaed.LoginTest","Login","Login",""
