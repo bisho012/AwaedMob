@@ -10,11 +10,9 @@ public class DashboardPage extends PageBase {
 
     public By lblDashboard = By.xpath("//div[@class='v-app-bar-title__content']");
 
-    public boolean getLabelDashboard(){
-            if (isDisplayed(lblDashboard))
-                return true;
-            else
-                return false;
+    public boolean isDashboardDisplayed(){
+        waitElement(lblDashboard);
+        return action(lblDashboard).isDisplayed();
     }
 
 }

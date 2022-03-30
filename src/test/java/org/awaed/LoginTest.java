@@ -17,6 +17,6 @@ public class LoginTest extends TestBase {
         loginPage.setTxtUserName(ExcelFileManager.setDataFromExcelFile(0, 1));
         loginPage.setTxtPassword(ExcelFileManager.setDataFromExcelFile(1, 1));
         loginPage.pressLogin();
-        Assert.assertTrue(dashboardPage.isDisplayed(dashboardPage.lblDashboard));
+        Assert.assertTrue(dashboardPage.isDashboardDisplayed());
     }
 }

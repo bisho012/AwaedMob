@@ -10,15 +10,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class PageBase {
 
     WebDriver driver;
-    public PageBase(WebDriver driver){
+
+    public PageBase(WebDriver driver) {
         this.driver = driver;
     }
 
-    protected WebElement action(By locator){
+    protected WebElement action(By locator) {
         return driver.findElement(locator);
     }
 
-    protected void waitElement(By locator){
+    protected void waitElement(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -30,7 +31,7 @@ public class PageBase {
         action(locator).sendKeys(data);
     }
 
-    protected void click(By locator){
+    protected void click(By locator) {
         waitElement(locator);
         action(locator).click();
     }
@@ -41,12 +42,12 @@ public class PageBase {
         select.selectByIndex(index);
     }
 
-    public boolean isDisplayed(By locator){
+    public boolean isElementDisplayed(By locator) {
         waitElement(locator);
         return action(locator).isDisplayed();
     }
 
-    public String getContent(By locator){
+    public String getContent(By locator) {
         return action(locator).getText();
     }
 
