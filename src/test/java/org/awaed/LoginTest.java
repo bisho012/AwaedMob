@@ -14,15 +14,9 @@ public class LoginTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     public void Login() throws IOException, InterruptedException {
         String dashboard = "لوحة التحكم";
-        loginPage.setTxtUserName(ExcelFileManager.setDataFromExcelFile(0,1));
-        loginPage.setTxtPassword(ExcelFileManager.setDataFromExcelFile(1,1));
+        loginPage.setTxtUserName(ExcelFileManager.setDataFromExcelFile(0, 1));
+        loginPage.setTxtPassword(ExcelFileManager.setDataFromExcelFile(1, 1));
         loginPage.pressLogin();
-        if (dashboardPage.getLabelDashboard() == true)
-        {
-            System.out.println("Success");
-            System.out.println("Success");
-        }
-        else
-            System.out.println("Failed");
+        Assert.assertTrue(dashboardPage.isDisplayed(dashboardPage.lblDashboard));
     }
 }

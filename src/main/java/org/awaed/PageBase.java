@@ -42,6 +42,7 @@ public class PageBase {
     }
 
     public boolean isDisplayed(By locator){
+        waitElement(locator);
         return action(locator).isDisplayed();
     }
 
