@@ -15,7 +15,8 @@ import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnviro
 public class TestBase {
     WebDriver driver;
     LoginPage loginPage;
-    private final String url="https://fundraiser-test.awaed.co/ar/login";
+    DashboardPage dashboardPage;
+    private final String url = "https://fundraiser-test.awaed.co/ar/login";
 
     @BeforeSuite
     void setEnvironment() {
@@ -29,21 +30,22 @@ public class TestBase {
     }
 
     @BeforeClass
-    public void setUp(){
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.navigate().to(url);
         loginPage = new LoginPage(driver);
+        dashboardPage = new DashboardPage(driver);
     }
 
     @AfterClass
-    public void tearDown(){
-        driver.quit();
+    public void tearDown() {
+        //driver.quit();
     }
 
-    public void switchTab(){
-        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+    public void switchTab() {
+        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
     }
 
